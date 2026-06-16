@@ -545,6 +545,118 @@ footer {
   letter-spacing: .2em;
   border-top: 1px solid #0e0804;
 }
+
+/* ══════════════════════════
+   📱 MOBILE RESPONSIVE
+══════════════════════════ */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero-inner {
+    padding: 0 24px 48px;
+    max-width: 100%;
+  }
+
+  /* Manifesto */
+  .manifesto {
+    padding: 64px 24px;
+  }
+
+  /* Split sections — stack vertically */
+  .split {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+  .split.reverse {
+    direction: ltr;
+  }
+  .split-img {
+    min-height: 260px;
+  }
+  .split-img.left::after,
+  .split-img.right::after {
+    background: linear-gradient(0deg, var(--bg) 0%, transparent 60%);
+  }
+  .split-text {
+    padding: 40px 24px;
+  }
+
+  /* Facts — 1 column */
+  .facts {
+    grid-template-columns: 1fr;
+  }
+  .fact {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 36px 24px;
+  }
+  .fact:last-child { border-bottom: none; }
+
+  /* Lever strip */
+  .lever {
+    grid-template-columns: 1fr;
+  }
+  .lever-img {
+    min-height: 240px;
+  }
+  .lever-img::after {
+    background: linear-gradient(0deg, var(--bg) 0%, transparent 60%);
+  }
+  .lever-text {
+    padding: 40px 24px;
+  }
+
+  /* Inherit arrow */
+  .inherit {
+    padding: 56px 24px;
+  }
+  .from-to {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .city { padding: 0; }
+  .city-jp { font-size: 28px; }
+  .arrow-col {
+    flex-direction: row;
+    transform: rotate(90deg);
+  }
+  .a-line { width: 40px; }
+
+  /* Charcoal */
+  .charcoal-text {
+    padding: 0 24px 40px;
+  }
+
+  /* Team grid — 1 column */
+  .team-section {
+    padding: 64px 24px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .member {
+    padding: 36px 24px;
+  }
+
+  /* CTA sections */
+  .cta {
+    padding: 64px 24px;
+  }
+  .action-section {
+    padding: 64px 24px;
+  }
+  .cta-primary {
+    width: 100%;
+    justify-content: center;
+    padding: 18px 24px;
+  }
+  .sns-row {
+    flex-direction: column;
+  }
+  .sns-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
 </head>
 <body>
